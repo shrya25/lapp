@@ -30,7 +30,7 @@ gpu = st.selectbox('GPU',data['gpu'].unique())
 os = st.selectbox('OS',data['operatingsys'].unique())
 
 if st.button('Predict Price'):
-    query = np.array([company,type,ram,cpu,hdd,screen_size,hdd,gpu,os])
+    query = np.array([company,type,ram,cpu,screen_size,hdd,gpu,os])
 
     query = query.reshape(1,8)
     st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
