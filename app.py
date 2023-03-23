@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # import the model
-pipe = pickle.load(open('expipe (1).pkl','rb'))
+pipe = pickle.load(open('expipe (2).pkl','rb'))
 data = pickle.load(open('data.pkl','rb'))
 
 st.title("Laptop Predictor")
